@@ -1,0 +1,10 @@
+id,story,story_points,sprint,status,responsavel
+1,Cadastrar user stories,5,1,em andamento,Joao
+2,Exibir gráfico burndown,8,1,pendente,Maria
+3,Gerar dados IoT simulados,8,2,pendente,Ana
+4,Criar dashboard IoT,8,2,pendente,Carlos
+5,KPIs Velocity CPI SPI,5,1,pendente,Julia
+6,Análise cruzada dados IoT e entregas,8,3,pendente,Renata
+7,Gerar relatório via IA,5,4,pendente,Pedro
+8,Cadastrar riscos,3,1,pendente,Linda
+9,Gerar lições aprendidas,3,4,pendente,Caio
