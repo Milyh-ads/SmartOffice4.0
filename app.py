@@ -328,10 +328,10 @@ elif pagina_sistema == "Projeto":
             data = [
                 {"ID": 1, "User Story": "Como administrador, quero cadastrar salas para agendamentos.", "Sprint": 1, "Story Points": 8, "Status": "Pendente"},
                 {"ID": 2, "User Story": "Como usuário, quero reservar salas pelo dashboard.", "Sprint": 1, "Story Points": 5, "Status": "Pendente"},
-                {"ID": 3, "User Story": "Como gestor, quero visualizar burndown do projeto.", "Sprint": 2, "Story Points": 3, "Status": "Pendente"},
-                {"ID": 4, "User Story": "Como IoT admin, quero monitorar sensores em tempo real.", "Sprint": 2, "Story Points": 8, "Status": "Pendente"},
-                {"ID": 5, "User Story": "Como analista, quero cruzar dados de entregas com dados IoT.", "Sprint": 3, "Story Points": 5, "Status": "Pendente"},
-                {"ID": 6, "User Story": "Como PO, quero gerar relatórios automáticos via IA.", "Sprint": 4, "Story Points": 8, "Status": "Pendente"}
+                {"ID": 3, "User Story": "Como gestor, quero visualizar burndown do projeto.", "Sprint": 2, "Story Points": 3, "Status": "Finalizado"},
+                {"ID": 4, "User Story": "Como IoT admin, quero monitorar sensores em tempo real.", "Sprint": 2, "Story Points": 8, "Status": "Finalizado"},
+                {"ID": 5, "User Story": "Como analista, quero cruzar dados de entregas com dados IoT.", "Sprint": 3, "Story Points": 5, "Status": "Em andamento"},
+                {"ID": 6, "User Story": "Como PO, quero gerar relatórios automáticos via IA.", "Sprint": 4, "Story Points": 8, "Status": "Finalizado"}
             ]
             return pd.DataFrame(data)
 
@@ -342,7 +342,7 @@ elif pagina_sistema == "Projeto":
             backlog_txt = backlog.to_string(index=False)
             st.download_button("Baixar Backlog (TXT)", backlog_txt, file_name="product_backlog.txt")
 
-            from reportlab.lib.pagesizes import landscape, letter
+            from reportlab.lib.pagesizes import letter, landscape
             from reportlab.pdfgen import canvas
             from io import BytesIO
             buffer = BytesIO()
